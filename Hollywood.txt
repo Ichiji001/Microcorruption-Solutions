@@ -1,3 +1,13 @@
+{
+    modes: {
+        markdown: {
+            preferences: {
+                wordWrap: false
+            }
+       }
+    }
+}
+
 Microcorruption-Solutions
 =========================
 
