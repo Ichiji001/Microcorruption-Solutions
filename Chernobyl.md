@@ -19,12 +19,13 @@ Step 4: <b><br>
 Using the same input that gave the return error, trace the code and see which function is overwriting the stack. In my case, the function I found was the 'free' function. 
 
 Step 5: <b><br>
-At this point the goal is to control where the function returns, so we must note the address on the stack, in the case of this solution, the return address we overwrite is the 'free's return value, but the function that called free, 'rehash'
+At this point the goal is to control where the function returns, so we must note the address on the stack, in the case of this solution, the return address we overwrite is 'rehash's return value. 'rehash' is the function that 'free' returns to after it's finished.
 
 Step 6: <b><br>
+By simple observation, we can determine which values we need to input in order to have 'rehash' return to our data to execute our own code.
 
-
-
+NOTE:
+In my case, before free would overwrite any return addresses, I had to create 12 user accounts. Also, sometimes the program will say that the heap has been maxed out and will stop, this was avoided by trial and error of adding different user accounts.
 
 
 
