@@ -22,4 +22,4 @@ Step 5: <b><br>
 R4 and R5 are used by the 'getsn' function for location to store the password and how many bytes are allowed. So we have control over all of this, and by calling 'getsn' we can now ignore the alphanumeric requirement, and for the 2nd round of input, we simply input code that unlocks the door.
 
 Step 6: <b><br>
-The fact that the 'getsn' function adds 0x6 to the stack pointer is why we have control of where 'getsn' ultimately returns to, the only requirement is that the return address be alphanumeric since we need to input this return address during the 1st round of the password input.
+The fact that the 'getsn' function adds 0x6 to the stack pointer is why we have control of where 'getsn' ultimately returns to, the only requirement is that the return address be alphanumeric since we need to set this return address during the 1st round of the password input.
